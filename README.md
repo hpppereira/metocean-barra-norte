@@ -1,2 +1,3 @@
-# ocean-barra-norte
-Oceanographic data analysis at Barra Norte
+# barranorte
+
+Processamento dos dados da comissão Barra Norte no NHi Sirius
