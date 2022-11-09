@@ -131,46 +131,7 @@ def calc_espec(x, nfft, fs):
 
 def id2uv(ndr_icomp, ndr_dcomp, str_conv='cart'):
     """
-    Converter componentes vetoriais polares em representação cartesiana.
-
-    Parametros
-    ----------
-    ndr_icomp : ``ndarray``
-                Intensidade vetorial.
-    ndr_dcomp : ``ndarray``
-                Direção vetorial na convenção declarada (em graus).
-    str_conv  : ``string``
-                Convenção de origem e orientação das direções.
-                (ex: 'cart' - para CARTESIANA ou 'meteo' - para
-                METEOROLÓGICA ou 'ocean' - para OCEANOGRÁFICA)
-
-    Retornos
-    --------
-    comp. u : ``ndarray``
-              Componente zonal, paralela ao eixo das abscissas.
-    comp. v : ``ndarray``
-              Componente meridional, paralela ao eixo das coordenadas.
-
-    Notas
-    -----
-    + A convenção CARTESIANA (``conv='cart'``) de direções possui origem
-      (i.e. 0°) sobre o domínio positivo do eixo das abscissas. Seus
-      valores crescem no sentido anti-horário e indicam o sentido para
-      onde o fluxo vetorial vai.
-
-    + A convenção METEOROLÓGICA (``conv='meteo'``) de direções possui
-      origem (i.e. 0°) sobre o domínio positivo do eixo das coordenadas.
-      Seus valores crescem no sentido horário e indicam o sentido de
-      onde o fluxo vetorial vêm.
-
-    + A convenção OCEANOGRÁFICA (``conv='ocean'``) de direções possui
-      origem (i.e. 0°) sobre o domínio positivo do eixo das coordenadas.
-      Seus valores crescem no sentido horário e indicam o sentido para
-      onde o fluxo vetorial vai.
-
-    + Na ausência de declaração explícita da convenção das direções no
-      parâmetro opcional ``str_conv``, considera-se aquele associado
-      à CARTESIANA com identificação dada por 'cart'.
+    intensidade e direcao para u e v
     """
 
     if str_conv == 'cart':
